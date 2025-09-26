@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(144, 243, 31, 0.74);
+}
+
+main {
+    gap: 90px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 45% 45%;
+}
+
+.phones {
+    height: 70vh;
+    width: 30vw;
+    border: solid cadetblue;
+    word-break: break-all;
+    color: indianred;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    background-color: azure;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+dt {
+    margin-left: 2rem;
+}
+
+dd {
+    margin-left: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1.5rem;
+}
+
+.contact {
+    height: 68vh;
+    width: 35vw;
+    border: solid cadetblue;
+    color: indianred;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    background-color: azure;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.map {
+    border: solid crimson;
+    width: 85vw;
+    height: 75vh;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .phones {
+        height: 60vh;
+        width: 80vw;
+        border: solid cadetblue;
+        color: indianred;
+        font-size: 1.3rem;
+        background-color: azure;
+        border-radius: 10px;
+        line-height: 1.5;
+        margin-left: 3rem;
+    }
+
+    .contact {
+        padding-top: 1rem;
+        height: 68vh;
+        width: 80vw;
+        border: solid cadetblue;
+        color: indianred;
+        font-size: 1.5rem;
+        background-color: azure;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        margin-left: 3rem;
+    }
+
+    .map {
+        border: solid crimson;
+        width: 85vw;
+        height: 75vh;
+        margin-left: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 5rem;
+    }
+}

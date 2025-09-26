@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(186, 85, 211, 0.87);
+}
+
+main {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 45% 45%;
+    margin: 3rem;
+}
+
+.container {
+    font-size: larger;
+    border: solid burlywood;
+    height: 70vh;
+    width: 45vw;
+    background-color: darkkhaki;
+}
+
+img {
+    margin: 1rem;
+    border-radius: 50%;
+    border: solid black;
+    width: 35vw;
+    height: 50vh;
+}
+
+figcaption {
+    margin: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+span {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    background-color: gainsboro;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+
+    .container {
+        font-size: larger;
+        border: solid burlywood;
+        height: auto;
+        width: auto;
+        background-color: darkkhaki;
+        margin-left: -2rem;
+    }
+
+    img {
+        border-radius: 50%;
+        border: solid black;
+        width: 75vw;
+        height: 40vh;
+    }
+
+    figcaption {
+        margin: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1rem;
+    }
+
+    span {
+        margin-left: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        background-color: gainsboro;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 990px) {
+    main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: 0.5rem;
+    }
+
+    .container {
+        margin-right: -4rem;
+        font-size: larger;
+        border: solid burlywood;
+        height: 55vh;
+        width: 45vw;
+        background-color: darkkhaki;
+    }
+
+    img {
+        margin: 1rem;
+        border-radius: 50%;
+        border: solid black;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    figcaption {
+        margin: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+    }
+
+    span {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+}

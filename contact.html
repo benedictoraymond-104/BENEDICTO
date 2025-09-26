@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="contact.css">
+<script>
+    fetch('nav.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        });
+</script>
+
+<body>
+    <div id="nav"></div>
+    <main>
+        <div class="phones">
+            <dl>
+                <dt>
+                    RAYMOND KITAGAMBA </dt>
+                <dd> airtel: 0684246634 <br>Vodacom: 0762917194
+                </dd>
+                <dt>
+                    <br>
+                    MEKTRIDA KAMELA
+                </dt>
+                <dd> airtel: 0684242730 <br>Halotel : 0618272730
+                </dd>
+                <br>
+                <dt>
+                    BENEDICTO RAYMOND
+                </dt>
+                <dd> Vodacom: 0755799483
+                </dd>
+            </dl>
+        </div>
+        <div class="contact">
+            <image src="whatsaap.PNG" height="50px" width="50px"></image> O762917194 Raymond Kitagamba <br> 0755799483
+            Benedicto R
+            <image src="instagram.PNG" height="50px" width="50px"></image> Benedicto Raymond
+            <image src="youtube.PNG" height="50px" width="50px"></image> Raymond kitagamba / Benedicto
+            <image src="facebook.PNG" height="50px" width="50px"></image> Raymond Kitagamba / Mektrida Kamela /benedicto
+            Raymond
+            <image src="thread.PNG" height="50px" width="50px"></image> Raymond Kitagamba
+            <image src="gmail.PNG" height="50px" width="50px"></image>
+            <a href="https://Gmail.com">Benedicto Raymond</a> <br>
+            <a href="https://Gmail.com">Raymond Kitagamba</a>
+            <br>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.7745648437934!2d39.20773231425988!3d-6.792354395039263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4a8fca2ef1a1%3A0x88d1d2de0e5d95fa!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1691573345062!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+</body>
+
+</html>

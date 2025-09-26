@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Name Example</title>
+    <script>
+        function printName() {
+            // Get value from input box
+            let name = document.getElementById("username").value;
+
+            // Print the name on the web page
+            document.getElementById("result").innerText = "Hello, " + name + "!";
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="printName()">Submit</button>
+
+    <h3 id="result"></h3> <!-- Where the name will be printed -->
+</body>
+</html>

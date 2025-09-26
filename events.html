@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="events.css">
+ <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav').innerHTML = data;
+      });
+  </script>
+<body>
+    <div id="nav"></div> 
+    <main>
+    <div class="div1">
+        <span>Event 1</span> <br>
+        <image src="pexels-binyaminmellish-1396122.jpg" class="img1" ></image> 
+        <br>
+        <span class="span2">We had planed to to visite the national parks in holiday after
+            schools to be closed
+        </span>
+    </div>
+    
+    <div class="div2">
+        <span>Event 1</span> <br>
+        <image src="1322779.jpg" class="img2" ></image> 
+        <br>
+        <span class="span3">We had planed to to visite the national parks in holiday after
+            schools to be closed
+        </span>
+    </div>
+    </main>
+</body>
+</html>

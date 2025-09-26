@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/pexels-eberhardgross-1624496.jpg);
+    backdrop-filter: brul(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    margin: 2rem
+}
+
+.div1 {
+    background-color: azure;
+    width: auto;
+    border: solid black;
+    border-radius: 8px;
+
+}
+
+.div2 {
+    background-color: azure;
+    width: auto;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.img1 {
+    height: 45vh;
+    width: 38vw;
+    margin: 2rem;
+    border-radius: 10px;
+    border: solid rgb(207, 17, 176);
+}
+
+.img2 {
+    height: 45vh;
+    width: 38vw;
+    margin: 2rem;
+    border-radius: 10px;
+    border: solid rgb(218, 32, 172);
+}
+
+span {
+    font-size: xx-large;
+    margin-left: 1.5rem;
+}
+
+.span2 {
+    bottom: 0;
+    font-size: x-large;
+}
+
+.span3 {
+    font-size: x-large;
+}
+
+nav {
+    color: cornsilk;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img1:hover {
+        height: 300px;
+        width: 300px;
+        border: double rgba(255, 0, 0, 0.637);
+        border-radius: 8px;
+    }
+
+    .img2:hover {
+        height: 300px;
+        width: 300px;
+        border: double rgba(255, 0, 0, 0.637);
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        height: 200px;
+        width: 300px;
+    }
+}

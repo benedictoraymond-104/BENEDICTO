@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="font.css">
+<script>
+    fetch('nav.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        });
+</script>
+
+<body>
+    <div id="nav"></div>
+    <footer>
+        Developer : <br>
+        Benedicto Raymond <br>
+        E-mail : <a href="mailto:benedictoraymond104@gmail.com">benedictoraymond104@gmail.com</a><br>
+        Contact : <a href="tel: 075579483">0755799483 <br></a>
+        ✅benedictoraymond <br>
+    </footer>
+    <div class="end">
+        &copy July 2025
+    </div>
+
+</body>
+
+</html>

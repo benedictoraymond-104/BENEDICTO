@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="portifolio.css">
+<script>
+    fetch('portfolio.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        });
+</script>
+</script>
+
+<body>
+
+    <div id="nav"></div>
+    <main>
+        <section>
+            <h1>Hi 🖐</h1>
+            <span class="header"> Am Benedicto Raymond</span>
+            <p class="content">
+                Am form six student at kasita seminary which is found at Mahenge Morogoro <br>
+                this is my personal portfolio which explain my details <br>
+                This site has designed by using HTML AND CSS only <br>
+                Am the teaching differen coarses <span>if you want can login to get full reason of your coarse you
+                    want</span>
+            </p>
+            <a href="font.html"><button class="button2">PROJECT</button></a>
+        </section>
+
+        <div class="div1">
+            <h2>Login here</h2>
+            <p>
+                Name <span contenteditable="true" class="name" data-placeholder="Enter your Name"></span>
+            </p>
+            <p>
+                Email <span contenteditable="true" class="name" data-placeholder="Enter your Email"></span>
+            </p>
+            <p>
+                Password: <span contenteditable="true" class="name" data-placeholder="Enter your Password"
+                    data-value="Password"></span>
+            </p>
+            <center>
+                <button class="button1">Login</button>
+                <p class="login1">
+                    Don't have an account ? <a href="" class="link2">Sign up </a>here
+                </p>
+
+                <span class="ab">log in </span> <br>
+                <span class="link">
+                    <a href="https://facebook.com"></a>
+                    <a href="https://instagram"></a>
+                    <a href="https://youtube.com"></a>
+                    <a href="https://google.com"></a>
+                    <a href="https://thread.com"></a>
+                </span>
+            </center>
+        </div>
+    </main>
+</body>
+
+</html>

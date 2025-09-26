@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <style>
+        main {
+            color: blueviolet;
+            height: auto;
+            width: 380px;
+            line-height: 1.5;
+            border: solid black;
+            box-shadow: 20px 20px palegoldenrod;
+            background-image: linear-gradient(rgba(255, 255, 0, 0.705), rgba(255, 192, 203, 0.705));
+            padding: 20px;
+        }
+        h4 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 255, 255, 0.507);
+            color: rgb(138, 86, 9);
+        }
+        button {
+            border: none;
+            background-color: rgba(165, 42, 42, 0.521);
+            color: beige;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        input {
+            margin: 0.5rem;
+            font-size: 1rem;
+            color: red;
+        }
+        #output {
+            margin-top: 1rem;
+            color: darkblue;
+            font-weight: bold;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <main>
+            <h4>
+                <marquee>PLEASE REGISTER YOURSELF IN OUR PAGE</marquee>
+            </h4>
+            First name: <input type="text" id="firstname"><br>
+            Second name: <input type="text" id="second"><br>
+            Third name: <input type="text" id="thirdname"><br>
+            Enter password: <input type="password" id="password"><br>
+            Confirm password: <input type="password" id="newpassword"><br>
+            <button onclick="now()">Send Information</button>
+            <div id="output"></div>
+        </main>
+    </center>
+
+    <script>
+        function now() {
+            let name1 = document.getElementById("firstname").value;
+            let secondname = document.getElementById("second").value;
+            let thirdname = document.getElementById("thirdname").value;
+            let password = document.getElementById("password").value;
+            let newpassword = document.getElementById("newpassword").value;
+
+       //     if (name1 === "" || secondname === "" || thirdname === "" || password === "" || newpassword === "") {
+       //         alert("❌ Please fill all the fields!");
+      //          return;
+        //    }
+//
+  //          if (password !== newpassword) {
+    //            alert("❌ Passwords do not match. Please try again.");
+      //          return;
+        //    }
+
+            let message = "✅ Registration Successful!\n\n" +
+                          "First name: " + name1 + "\n" +
+                          "Second name: " + secondname + "\n" +
+                          "Third name: " + thirdname;
+
+            document.getElementById("output").innerText = message;
+        }
+    </script>
+</body>
+</html>
