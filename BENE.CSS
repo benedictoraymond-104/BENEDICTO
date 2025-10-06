@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-image: linear-gradient(to left, rgba(200, 255, 0, 0.644), rgba(255, 0, 0, 0.493));
     margin: 0;
@@ -169,4 +170,177 @@ figcaption {
         background-image: linear-gradient(to left, rgba(0, 128, 0, 0.753), rgba(128, 128, 128, 0.61));
         padding: 0;
     }
+=======
+body {
+    background-image: linear-gradient(to left, rgba(200, 255, 0, 0.644), rgba(255, 0, 0, 0.493));
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    gap: 90px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 45% 45%;
+}
+
+.tena {
+    display: flex;
+    gap: 90px;
+    margin-left: 3.5rem;
+}
+
+h1 {
+    position: static;
+    background-image: linear-gradient(to left, rgba(255, 192, 203, 0.678), rgba(255, 255, 0, 0.767));
+    background-color: chocolate;
+    color: rgba(218, 31, 18, 0.904);
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    animation: h1 5s ease-in-out infinite;
+}
+
+@keyframes h1 {
+    from {
+        translate: auto;
+        scale: auto;
+    }
+
+    to {
+        transform: translate(180deg);
+        scale: auto;
+    }
+
+}
+
+marquee {
+    font-size: 30px;
+    color: rgb(55, 0, 255);
+    background-image: linear-gradient(to left, rgba(0, 128, 0, 0.753), rgba(128, 128, 128, 0.61));
+    padding: 0;
+}
+
+span {
+    font-size: 2rem;
+    color: blue;
+}
+
+.bene {
+    border: solid red;
+    background-color: rgba(240, 255, 255, 0.562);
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    border-radius: 15px 15px 15px 15px;
+    /* box-shadow: 20px 20px rgba(103, 193, 216, 0.418); */
+}
+
+.picture {
+    border: solid rgba(0, 0, 255, 0.37);
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    height: 53vh;
+    width: 28vw;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(114, 25, 9);
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+figcaption {
+    padding: 0.5px;
+    font-size: 1.5rem;
+    color: rgb(16, 134, 51);
+}
+
+@media screen and (max-width: 790px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .picture {
+        border: solid rgba(0, 0, 255, 0.37);
+        margin-left: 0.5rem;
+        border-radius: 50%;
+        height: 45vh;
+        width: 60vw;
+    }
+
+    .bene {
+        margin-left: 3rem;
+        width: 78vw;
+        height: 65vh;
+        margin-bottom: -4rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    figcaption {
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 990px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .picture {
+        border: solid rgba(0, 0, 255, 0.37);
+        margin-left: 0.5rem;
+        border-radius: 50%;
+        height: 45vh;
+        width: 60vw;
+    }
+
+    .bene {
+        margin-left: 3rem;
+        width: 90vw;
+        height: 60vh;
+        margin-bottom: -3rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    figcaption {
+        margin: 10px;
+        font-size: 3rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        color: rgb(114, 25, 9);
+        margin-left: auto;
+        font-size: 2rem;
+    }
+
+    marquee {
+        font-size: 3rem;
+        color: rgb(55, 0, 255);
+        background-image: linear-gradient(to left, rgba(0, 128, 0, 0.753), rgba(128, 128, 128, 0.61));
+        padding: 0;
+    }
+>>>>>>> a5e1c82 (Initial commit)
 }

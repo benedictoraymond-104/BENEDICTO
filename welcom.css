@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: rgba(6, 158, 6, 0.733);
+    height: 10rem;
+    color: white;
+    padding-top: 0.1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.774);
+    text-align: center;
+    font-size: 1.3rem;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+
+}
+
+.link {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+div {
+    margin: 1rem;
+    height: 6.5rem;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ga;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    padding-top: 1.5rem;
+}
+
+.tena {
+    color: blue;
+}

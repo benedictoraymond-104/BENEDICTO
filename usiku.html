@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -142,4 +143,150 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapped Hover Content</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            position: relative;
+        }
+
+        .box {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin-bottom: 20px;
+            position: relative;
+            /* for hover content positioning */
+            cursor: pointer;
+        }
+
+        .box a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* extra content wrapper */
+        .extra-content {
+            display: none;
+            /* hidden by default */
+            position: absolute;
+            top: 70%;
+            /* just below the box */
+            width: 100%;
+            background: rgba(158, 233, 19, 0.9);
+            /* semi-transparent so it inherits look */
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 0;
+            margin-top: 2rem;
+        }
+
+        .box:hover .extra-content {
+            display: block;
+        }
+
+        /* Optional: style links inside extra content */
+        .extra-content a {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .extra-content a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* Ensure extra content overlays content below */
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .edit-line {
+            border: none;
+            /* no box */
+            border-bottom: 1px solid black;
+            /* only underline */
+            outline: none;
+            /* no blue outline */
+            display: inline-block;
+            min-width: 200px;
+            /* line length */
+            padding: 2px;
+            position: relative;
+        }
+
+        /* Placeholder effect */
+        .edit-line:empty::before {
+            content: attr(data-placeholder);
+            /* use custom text */
+            color: gray;
+            pointer-events: none;
+            /* placeholder won’t block typing */
+        }
+    </style>
+
+    <p>
+        Name: <span contenteditable="true" class="edit-line" data-placeholder="Enter your name"></span>
+    </p>
+
+    <p>
+        Email: <span contenteditable="true" class="edit-line" data-placeholder="Enter your email"></span>
+    </p>
+
+
+
+    <div class="container">
+        <div class="box">
+            Box 1 Content
+            <br>
+            <a href="https://example.com" target="_blank">Main Link</a>
+
+            <!-- Extra content appears on hover -->
+            <div class="extra-content">
+                <p>This is additional wrapped content.</p>
+                <a href="https://openai.com" target="_blank">Extra Link</a>
+                <p>More info here that wraps naturally inside the container.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            Box 2 Content
+            <br>
+            <a href="https://example.com" target="_blank">Main Link</a>
+
+            <div class="extra-content">
+                <p>Extra content for Box 2.</p>
+                <a href="https://openai.com" target="_blank">Extra Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 300px; background:#eee; padding:20px;">
+        <h2>Content Below</h2>
+        <p>✅ The page content below remains visible; extra content overlays without pushing it down.</p>
+    </div>
+
+</body>
+
+>>>>>>> a5e1c82 (Initial commit)
 </html>

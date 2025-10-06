@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,4 +45,52 @@
         }
     }
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Enter number : <input type="text" id="number1"><br>
+   Enter number : <input type="text" id="number2">
+   <input type="button" onclick="add()" value="Add">
+   <input type="button" onclick="subtraction()" value="Subtract">
+   <input type="button" onclick="multiply()" value="multiply">
+   <input type="button" onclick="division()" value="divide">
+   <br>
+   <span>
+     <h4 id="result"></h4>
+   </span>
+</body>
+<script>
+    function add(){
+        let a = parseFloat(document.getElementById("number1").value);
+        let b = parseFloat(document.getElementById("number2").value);
+        alert("Result " + (a+b));
+    }
+    function subtraction(){
+        let a =parseFloat(document.getElementById("number1").value);
+        let b =parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").textContent= a-b;
+    }
+    function multiply(){
+        let a = parseFloat(document.getElementById("number1").value);
+        let b = parseFloat(document.getElementById("number2").value);
+        alert("Result "  + (a*b));
+        }
+    function division(){
+         let a =parseFloat(document.getElementById("number1").value);
+        let b =parseFloat(document.getElementById("number2").value);
+        if(b === 0){
+            alert('You cant find division')
+        }
+        else{
+            document.getElementById("result").textContent= a/b;
+        }
+    }
+</script>
+>>>>>>> a5e1c82 (Initial commit)
 </html>

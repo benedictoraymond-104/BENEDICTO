@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     height: 90px;
     margin: 0;
@@ -103,4 +104,111 @@ a {
         font-size: 2rem;
         width: 100%;
     }
+=======
+body {
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    justify-content: space-between;
+    /* background-image: url('./ChatGPT Image Jul 29, 2025, 06_30_21 PM.png'); */
+    background-si: si;
+    background-size: cover;
+    animation: bgMove 40s infinite alternate;
+}
+
+@keyframes bgMove {
+    0% {
+        background-image: url(/pexels-liam-anderson-411198-2120220.jpg);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    15% {
+        background-image: url(/pexels-kamo11235-667838.jpg);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(/pexels-eberhardgross-1624496.jpg);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    33% {
+        background-image: url(/ChatGPT\ Image\ Jul\ 30\,\ 2025\,\ 01_17_40\ AM.png);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    66% {
+        background-image: url(/pexels-binyaminmellish-1396122.jpg);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(/pexels-olly-853151.jpg);
+        background-si: no-si;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(/FATHER.jpg)
+    }
+}
+
+
+span {
+    background-color: cadetblue;
+}
+
+footer {
+    border-radius: 30px 0 0 30px;
+    background-color: aquamarine;
+    padding: 1rem;
+    height: auto;
+    padding-bottom: 3rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.end {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: auto;
+    background-color: blueviolet;
+}
+
+div {
+    padding-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+    footer {
+        border-radius: 30px 0 0 30px;
+        background-color: aquamarine;
+        padding: 1rem;
+        height: auto;
+        padding-left: 5rem;
+        padding-bottom: 3rem;
+        position: fixed;
+        bottom: 0;
+        font-size: 2rem;
+        width: 100%;
+    }
+>>>>>>> a5e1c82 (Initial commit)
 }

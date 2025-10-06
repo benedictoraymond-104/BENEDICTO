@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     padding: 0;
@@ -72,4 +73,80 @@ body {
         margin-right: 1rem;
         justify-content: center;
     }
+=======
+body {
+    margin: 0;
+    padding: 0;
+    animation: kita 10s infinite;
+}
+
+@keyframes kita {
+    0% {
+        background-color: gold;
+    }
+
+    10% {
+        background-color: rgba(102, 205, 171, 0.685);
+    }
+
+    20% {
+        background-color: rgba(30, 143, 255, 0.623);
+    }
+
+    50% {
+        background-color: rgba(209, 49, 0, 0.74);
+    }
+
+    70% {
+        background-color: #6708d3b2;
+    }
+
+    100% {
+        background-color: darkgoldenrod;
+    }
+}
+
+.background {
+    background-image: url(/ChatGPT\ Image\ Jul\ 29\,\ 2025\,\ 06_30_21\ PM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    border: solid black;
+    background-position: center;
+    height: 25rem;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+
+}
+
+.background:hover {
+    background: url(/pexels-kamo11235-667838.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black;
+    background-position: center;
+    height: 28rem;
+    border-radius: 20px 20px 20px 20px;
+}
+
+@media (max-width: 800px) {
+    .link {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+>>>>>>> a5e1c82 (Initial commit)
 }

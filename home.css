@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(200, 243, 230);
+}
+
+nav {
+    background-color: rgb(20, 20, 20);
+    height: 2rem;
+    border-radius: 3.5px;
+    border: solid rgb(175, 119, 119) 1px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    background-color: rgba(80, 212, 63, 0.733);
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    color: rgb(2, 2, 2);
+}
+
+button:hover {
+    transition: all 0.5s;
+    background-color: rgb(59, 56, 56);
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(253, 252, 252);
+}
+
+.pin {
+    border: 5px solid red;
+
+}
+
+.pin .list {
+    text-align: center;
+    color: rgb(1, 11, 12);
+
+}
+
+.l {
+    color: black;
+}
+
+div {
+    height: 20rem;
+    width: 20rem;
+    box-shadow: 3px 3px 3px 3px rgb(170, 168, 168);
+    margin: 3rem;
+    border-radius: 20px 20px 20px 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.pm {
+    transform: translateX(29.9rem);
+}
+
+.nn {
+    transform: translateX(50rem);
+}
+
+.bm {
+    transform: translateX(40rem);
+}
+
+h2 {
+    font-size: 3rem;
+}

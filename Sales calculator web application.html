@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,4 +35,42 @@
         
     }
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+        background-color: black;
+        color: azure;
+        font-size: large;
+    }
+</style>
+<body>
+    <center>
+        <h1>Sales Calculator</h1>
+        <h3 id="result">
+            $00.00
+        </h6>
+        <b><label for="price">Original Price :</label>
+        <input type="text" id="Original"><br><br>
+        <label for="price">Percent Off :</label>
+        <input type="text" id="Percent">%</b><br>
+        <br>
+        <input type="button" value="Calculate!" onclick="calculate()" class="button">
+    </center>
+</body>
+<script>
+    function calculate(){
+        let a = parseFloat(document.getElementById("Original").value);
+        let b= parseFloat(document.getElementById("Percent").value);
+        document.getElementById("result").textContent = a - (a * (b / 100));
+        
+    }
+</script>
+>>>>>>> a5e1c82 (Initial commit)
 </html>
